@@ -1,4 +1,4 @@
-export default function DownArrow({ color, size, ...props }) {
+export default function Menu({ size, color, ...props }) {
   return (
     <>
       <svg
@@ -9,7 +9,7 @@ export default function DownArrow({ color, size, ...props }) {
         fill={color}
         {...props}
       >
-        <path d="M480-80 200-360l56-56 184 183v-647h80v647l184-184 56 57L480-80Z" />
+        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
       </svg>
     </>
   );

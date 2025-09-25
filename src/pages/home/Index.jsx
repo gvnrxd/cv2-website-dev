@@ -5,6 +5,7 @@ import headShot from "@/assets/img/headShot2x.png";
 import Button from "@components/button/Index.jsx";
 import Expectation from "@components/expectations/Index.jsx";
 import Testimonials from "@components/testimonials/Index.jsx";
+import CalendlyEmbed from "@components/calendly/Index.jsx";
 
 // Icons //
 import Care from "@assets/icons/Care.jsx";
@@ -89,7 +90,9 @@ export default function Home() {
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
                 magni reprehenderit reiciendis quasi quibusdam? Velit quis
-                quibusdam quaerat perferendis reprehenderit?
+                quibusdam quaerat perferendis reprehenderit? Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Mollitia nisi obcaecati
+                eius ipsa laboriosam saepe aspernatur rerum sint ratione rem?
               </p>
             </div>
             <a href="#contactForm" className={styles.aboutMeBtn}>
@@ -163,7 +166,7 @@ export default function Home() {
         <section className={styles.form}>
           <h2 id="contactForm">What are you waiting for?</h2>
           <div className={styles.formContainer}>
-            <p>Contact us today to get started!</p>
+            <CalendlyEmbed />
           </div>
         </section>
       </div>

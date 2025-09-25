@@ -11,3 +11,10 @@
   display: flex;
   text-overflow: ellipsis;
 }
+
+.header a {
+  text-decoration: none;
+}
+.header h1 {
+  color: black;
+}

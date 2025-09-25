@@ -2,25 +2,27 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Index.module.css";
 
+import Menu from "@assets/icons/Menu.jsx";
+import Home from "@assets/icons/Home.jsx";
+
 export default function Header() {
   return (
     <header className={styles.header}>
-      <h1>Consultant</h1>
+      <NavLink to="/">
+        <h1>Consultant</h1>
+      </NavLink>
+
       <nav>
         <ul>
           <li>
-            <NavLink to="/" end>
-              Home
+            <NavLink to="/">
+              <Home size={24} color={"black"} />
             </NavLink>
           </li>
           <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#about">Services</a>
-          </li>
-          <li>
-            <a href="#about">Testimonials</a>
+            <NavLink to="/about">
+              <Menu size={24} color={"black"} />
+            </NavLink>
           </li>
         </ul>
       </nav>

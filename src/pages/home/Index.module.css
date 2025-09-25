@@ -63,6 +63,7 @@
 
 .mainWrapper {
   padding: 0 var(--space-xs);
+  background-color: beige;
 }
 
 .divider {
@@ -129,6 +130,7 @@
   text-align: left;
   display: flex;
   justify-self: center;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
@@ -187,6 +189,6 @@
 }
 
 .formContainer {
-  height: 30dvh;
-  background-color: lightsalmon;
+  padding: var(--space-2xs) var(--space-xs);
+  min-height: fit-content;
 }
