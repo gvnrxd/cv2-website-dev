@@ -1,0 +1,10 @@
+.footer {
+  background-color: brown;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: var(--space-s);
+}

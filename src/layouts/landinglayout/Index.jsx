@@ -8,7 +8,6 @@ export default function LandingLayout() {
     <>
       <Header />
       <main>
-        <p>Landing Layout</p>
         <Outlet />
       </main>
       <Footer />

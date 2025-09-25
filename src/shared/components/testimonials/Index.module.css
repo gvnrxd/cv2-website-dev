@@ -1,0 +1,38 @@
+.testimonialCard {
+  background-color: gray;
+  border-radius: 8px;
+  padding: var(--space-s);
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs);
+  justify-content: center;
+  text-align: center;
+}
+
+.avatarWrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgrey;
+  text-align: center;
+}
+
+.avatarWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.textWrapper {
+  width: 70%;
+  word-break: break-word;
+  hyphens: auto;
+}
+.name {
+  font-weight: bold;
+}

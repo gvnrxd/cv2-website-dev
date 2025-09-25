@@ -1,0 +1,13 @@
+.header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  text-overflow: ellipsis;
+}

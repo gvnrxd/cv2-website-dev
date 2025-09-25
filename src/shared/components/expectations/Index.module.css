@@ -1,0 +1,20 @@
+.expectationCard {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.5fr 2fr;
+}
+
+.expectationCard svg {
+  justify-self: center;
+  align-self: center;
+}
+
+.expectationCard p {
+  font-weight: bolder;
+}
+
+.expectationText {
+  text-align: left;
+  word-break: break-word;
+  hyphens: auto;
+}
