@@ -5,6 +5,35 @@
 }
 
 :root {
+  /* Colors */
+  --seal-brown: hsl(27, 73%, 20%);
+  --russet: hsl(28, 56%, 32%);
+  --raw-umber: hsl(30, 44%, 40%);
+  --lion: hsl(35, 27%, 52%);
+  --khaki: hsl(46, 21%, 64%);
+  --sage-light: hsl(67, 19%, 72%);
+  --sage: hsl(73, 19%, 60%);
+  --reseda-green: hsl(74, 19%, 36%);
+  --ebony-green: hsl(80, 17%, 24%);
+  --olive-green: hsl(90, 20%, 20%);
+  --black: #333;
+  --white: #eaeaee;
+
+  --bg: var(--khaki);
+  --secondary-bg: var(--sage-light);
+  --header-bg: var(--olive-green);
+  --header-primary: var(--seal-brown);
+  --header-secondary: var(--russet);
+  --btn: var(--raw-umber);
+  --btn-border: hsl(30, 44%, 32%);
+  --btn-secondary: var(--lion);
+  --btn-secondary-border: hsl(35, 27%, 45%);
+  --card: var(--sage);
+  --card-header: var(--reseda-green);
+  --accent-1: var(--russet);
+  --accent-2: var(--seal-brown);
+
+  /* Font size scale */
   --step--2: clamp(0.6944rem, 0.6643rem + 0.1508vw, 0.8rem);
   --step--1: clamp(0.8333rem, 0.7857rem + 0.2381vw, 1rem);
   --step-0: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
@@ -38,4 +67,38 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  color: var(--black);
+  background-color: var(--bg);
+}
+
+h1 {
+  font-size: var(--step-5);
+  color: var(--header-primary);
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: var(--step-4);
+  color: var(--header-secondary);
+  color: var(--black);
+}
+h3 {
+  font-size: var(--step-3);
+}
+
+p {
+  font-size: var(--step--0);
+}
+
+span {
+  font-size: var(--step--1);
+}
+
+footer {
+  text-decoration: none;
+  color: var(--black);
+  font-size: var(--step--2);
 }

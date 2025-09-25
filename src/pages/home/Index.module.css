@@ -1,51 +1,58 @@
 .heroContainer {
   height: 60dvh;
-  background-color: red;
 }
 
 .heroContent {
-  background: black;
+  background: var(--bg);
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
+  padding: var(--space-2xs);
 }
 
 .heroTxt {
-  color: white;
+  color: var(--black);
   text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: var(--space-3xs);
+  gap: var(--space-2xs);
 }
 
 .heroTxt p {
   text-align: center;
   margin: 0 auto;
+  width: 85%;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  line-height: 0.9;
+  font-size: var(--step-1);
 }
 
 .heroMainBtn {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  background: ivory;
-  color: #333;
-  padding: var(--space-2xs);
-  width: 90%;
+  padding: var(--space-xs);
+  width: 60%;
+  color: var(--black);
   min-width: fit-content;
   text-decoration: none;
+  border: 2px solid var(--btn-secondary-border);
+  line-height: 0.8;
 }
 
 .heroSecondaryBtn {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  border: 1px solid #fefefe;
+  border: 2px solid var(--btn-secondary-border);
   background: transparent;
-  color: #fefefe;
-  padding: var(--space-2xs);
-  width: 90%;
+  color: var(--black);
+  font-size: var(--step-1);
+  padding: var(--space-xs);
+  width: 60%;
   min-width: fit-content;
   text-decoration: none;
 }
@@ -63,12 +70,15 @@
 
 .mainWrapper {
   padding: 0 var(--space-xs);
-  background-color: beige;
+  background-color: var(--bg);
 }
 
 .divider {
   text-align: center;
-  padding: var(--space-2xs) 0;
+  padding: var(--space-2xs) var(--space-xs);
+  background-color: var(--secondary-bg);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .expectationContainer {
@@ -82,16 +92,19 @@
 .aboutMe {
   display: flex;
   flex-direction: column;
-  background-color: wheat;
 }
 
 .aboutMe h2 {
-  background-color: brown;
+  background-color: var(--header-bg);
+  color: var(--white);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-
   text-align: center;
   padding: var(--space-m);
+}
+
+.aboutMe h3 {
+  text-align: center;
 }
 
 .aboutMeIntro {
@@ -124,8 +137,8 @@
 
 .aboutMeBtn {
   width: 90%;
-  background-color: white;
-  border: 1px solid #333;
+
+  border: 2px solid var(--btn-secondary-border);
   padding: var(--space-2xs) var(--space-s);
   text-align: left;
   display: flex;
@@ -135,12 +148,12 @@
   align-items: center;
   border-radius: 8px;
   margin-bottom: var(--space-l);
-  font-weight: bold;
+  font-weight: bolder;
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 .aboutMeBtn:hover {
-  background-color: #333;
+  background-color: var(--btn-secondary-hover);
 }
 
 .processContainer {
@@ -155,20 +168,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 90%;
   text-align: center;
+  font-size: var(--step--1);
 }
 
 .iconHeader {
   font-weight: bold;
+  font-size: var(--step-2) !important;
+  max-width: 100% !important;
+}
+.iconWrap p {
+  font-size: var(--step-0);
+  max-width: 80%;
+  hyphens: auto;
+  word-break: break-word;
+  text-align: center;
+  padding-bottom: var(--space-2xs);
 }
 
 .testimonials h2 {
-  background-color: brown;
+  background-color: var(--header-bg);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   text-align: center;
   padding: var(--space-m);
+  color: var(--white);
 }
 
 .testimonialContainer {
@@ -181,11 +205,12 @@
 }
 
 .form h2 {
-  background-color: brown;
+  background-color: var(--header-bg);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   text-align: center;
   padding: var(--space-m);
+  color: var(--white);
 }
 
 .formContainer {

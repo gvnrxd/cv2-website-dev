@@ -27,11 +27,11 @@ export default function Home() {
           <div className={styles.heroTxt}>
             <h1>Come As You Are</h1>
             <p>
-              Schedule a free consultation <br></br> and start achieving your
-              goals today!
+              Schedule a free consultation and start achieving your goals today!
             </p>
             <a className={styles.heroMainBtn} href="#contactForm">
-              Book a free consultation
+              Book A Free <br />
+              Consultation
             </a>
             <a className={styles.heroSecondaryBtn} href="#aboutMe">
               About Me
@@ -48,28 +48,28 @@ export default function Home() {
           <div className={styles.expectationContainer}>
             <Expectation
               Icon={Handshake}
-              size={48}
+              size={64}
               color="black"
               expectation="A Support That Stays"
               description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni eaque dolorem doloremque quis doloribus quae!"
             />
             <Expectation
               Icon={Care}
-              size={48}
+              size={64}
               color="black"
               expectation="Care First, Always"
               description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni eaque dolorem doloremque quis doloribus quae!"
             />
             <Expectation
               Icon={Church}
-              size={48}
+              size={64}
               color="black"
               expectation="Growth with Grace"
               description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni eaque dolorem doloremque quis doloribus quae!"
             />
             <Expectation
               Icon={Hiking}
-              size={48}
+              size={64}
               color="black"
               expectation="Purpose Over Perfection"
               description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni eaque dolorem doloremque quis doloribus quae!"
@@ -96,7 +96,7 @@ export default function Home() {
               </p>
             </div>
             <a href="#contactForm" className={styles.aboutMeBtn}>
-              Book A Chat <ForwardArrow color="#1f1f1f" size={24} />
+              Book A Chat <ForwardArrow color="var(--black)" size={36} />
             </a>
           </div>
         </section>
@@ -104,7 +104,7 @@ export default function Home() {
           <h2>The Process</h2>
           <div className={styles.processContainer}>
             <div className={styles.iconWrap}>
-              <Calender color="black" size={72} />
+              <Calender color="var(--black)" size={72} />
               <p className={styles.iconHeader}>Schedule a Meeting</p>
               <p>"Choose a time that works for you — no signup, no payment."</p>
               <p>

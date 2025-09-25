@@ -13,13 +13,6 @@ export default function Testimonials({ img, review, name, job, ...props }) {
         <div className={styles.textWrapper}>
           <p className={styles.name}>{name}</p>
           <p className={styles.job}>{job}</p>
-          <div className={styles.rating}>
-            <Star2 color="#2b2b2aff" size={16} />
-            <Star2 color="#2b2b2aff" size={16} />
-            <Star2 color="#2b2b2aff" size={16} />
-            <Star2 color="#2b2b2aff" size={16} />
-            <Star2 color="#2b2b2aff" size={16} />
-          </div>
 
           <p>{review}</p>
         </div>

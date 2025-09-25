@@ -1,13 +1,10 @@
 .testimonialCard {
-  background-color: gray;
+  background-color: var(--accent-1);
   border-radius: 8px;
-  padding: var(--space-s);
+  padding-top: var(--space-xs);
   display: flex;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3xs);
-  justify-content: center;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .avatarWrapper {
@@ -17,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: lightgrey;
+  background: var(--accent-1);
   text-align: center;
 }
 
@@ -29,10 +26,20 @@
 }
 
 .textWrapper {
-  width: 70%;
+  padding: var(--space-xs);
+  width: 100%;
   word-break: break-word;
   hyphens: auto;
+  color: var(--white);
+  gap: var(--space-3xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .name {
+  text-align: center;
   font-weight: bold;
+
+  font-size: var(--step-0);
 }

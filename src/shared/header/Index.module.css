@@ -1,20 +1,17 @@
 .header {
-  background-color: white;
+  background-color: var(--header-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  padding: var(--space-2xs) var(--space-2xs);
+}
+.header a {
+  color: var(--white);
 }
 
 .header ul {
   list-style: none;
   display: flex;
   text-overflow: ellipsis;
-}
-
-.header a {
-  text-decoration: none;
-}
-.header h1 {
-  color: black;
 }

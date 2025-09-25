@@ -1,6 +1,7 @@
 .footer {
-  background-color: brown;
+  background-color: var(--header-bg);
   padding: var(--space-s) var(--space-xs);
+  color: var(--white);
 }
 
 .footer ul {
@@ -20,7 +21,6 @@
 
 .legal {
   gap: 0;
-  font-size: var(--step--1);
   justify-content: space-between;
   align-items: center;
 }
@@ -36,7 +36,7 @@
 .policies a {
   text-decoration: underline;
   cursor: pointer;
-  color: black;
+  color: var(--white);
   text-decoration: none;
 }
 
