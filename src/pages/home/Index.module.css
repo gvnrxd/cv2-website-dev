@@ -3,7 +3,7 @@
 }
 
 .heroContent {
-  background: var(--bg);
+  background-color: var(--secondary-bg);
   display: flex;
   height: 100%;
   justify-content: center;
@@ -76,7 +76,7 @@
 .divider {
   text-align: center;
   padding: var(--space-2xs) var(--space-xs);
-  background-color: var(--secondary-bg);
+  background-color: var(--bg);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
 }
