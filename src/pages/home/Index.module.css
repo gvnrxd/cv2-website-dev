@@ -180,6 +180,8 @@
 }
 .paragraph {
   font-weight: 200;
+
+  margin-bottom: var(--space-2xs);
 }
 
 .aboutMeBtn {
