@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <ul className={styles.socials}>
         <a
-          href="https://www.instagram.com/cedthecounselor/"
+          href="https://www.instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
