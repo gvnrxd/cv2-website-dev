@@ -94,16 +94,22 @@ export default function Home() {
         </section>
         <section className={styles.aboutMe} id="aboutMe">
           <h2>Clarity & Support</h2>
-          <p className={styles.aboutMeIntro}>Hi, I'm Cedric —</p>
+
           <div className={styles.aboutHeader}>
-            <img src={headShot} alt="Headshot" />
+            <img
+              src={headShot}
+              alt="Headshot"
+              className={styles.aboutMeIntro}
+            />
+            <p className={styles.aboutMeIntro}>—Hi, I'm Cedric </p>
+
             <div className={styles.aboutText}>
               <h3>About Me</h3>
               <p className={styles.firstParagraph}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
                 ex.
               </p>
-              <p>
+              <p className={styles.paragraph}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
                 magni reprehenderit reiciendis quasi quibusdam? Velit quis
                 quibusdam quaerat perferendis reprehenderit? Lorem, ipsum dolor

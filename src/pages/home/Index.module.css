@@ -1,7 +1,7 @@
 .heroContainer {
   min-height: 95vh;
   background-color: var(--ebony-green);
-  padding: var(--space-2xs);
+  padding: var(--space-2xs) var(--space-s);
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -33,7 +33,7 @@
   font-size: var(--step-1);
   hyphens: auto;
   word-break: break-word;
-  font-weight: 800;
+  font-weight: 300;
 }
 
 .heroSignature {
@@ -43,12 +43,12 @@
   justify-content: flex-start;
   gap: 12px;
   font-size: var(--step-2);
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .heroRole {
   font-size: var(--step--1);
-  font-weight: normal;
+  font-weight: 100;
   font-style: italic;
 }
 
@@ -116,13 +116,13 @@
 }
 
 .mainWrapper {
-  padding: 0 var(--space-xs);
+  padding: 0 var(--space-s);
   background-color: var(--bg);
 }
 
 .divider {
   text-align: center;
-  padding: var(--space-2xs) var(--space-xs) 0;
+  padding: var(--space-2xs) var(--space-s);
   background-color: var(--bg);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -134,6 +134,7 @@
   gap: var(--space-s);
   flex-wrap: wrap;
   padding: var(--space-2xs) 0;
+  font-weight: 200;
 }
 
 .aboutMe {
@@ -181,6 +182,9 @@
 .firstParagraph {
   margin-bottom: var(--space-2xs);
 }
+.paragraph {
+  font-weight: 200;
+}
 
 .aboutMeBtn {
   width: 90%;
@@ -219,6 +223,7 @@
   align-items: center;
   text-align: center;
   font-size: var(--step--1);
+  font-weight: 200;
 }
 
 .iconHeader {
@@ -253,7 +258,7 @@
   grid-template-columns: repeat(auto-fit, minmax(180px, auto));
   justify-content: center;
   gap: var(--space-3xs);
-  padding: var(--space-2xs);
+  padding: var(--space-2xs) var(--space-s);
 }
 
 .form h2 {
@@ -266,6 +271,5 @@
 }
 
 .formContainer {
-  padding: 0 var(--space-xs);
   min-height: fit-content;
 }
