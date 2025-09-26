@@ -118,6 +118,7 @@
 .mainWrapper {
   padding: 0 var(--space-s);
   background-color: var(--bg);
+  overflow: hidden;
 }
 
 .divider {
@@ -155,10 +156,6 @@
   text-align: center;
 }
 
-.aboutMeIntro {
-  padding-top: var(--space-2xs);
-}
-
 .aboutHeader {
   overflow: auto;
 }
@@ -167,15 +164,13 @@
   float: left;
   width: 200px;
   height: 200px;
+  overflow: hidden;
   object-fit: cover;
-  border-radius: 50%;
-  padding: var(--space-2xs);
 }
 
 .aboutText {
   display: block;
   text-align: left;
-  padding: var(--space-2xs);
   hyphens: auto;
   overflow-wrap: break-word;
 }
