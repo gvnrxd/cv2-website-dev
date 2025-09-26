@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <NavLink to="/">
-        <p>Consultant</p>
+        <p>Logo</p>
       </NavLink>
       <nav>
         <ul>

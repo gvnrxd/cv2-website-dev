@@ -1,67 +1,114 @@
 .heroContainer {
-  height: 60dvh;
+  min-height: 95vh;
+  background-color: var(--ebony-green);
+  padding: var(--space-2xs);
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  color: var(--white);
 }
 
 .heroContent {
-  background-color: var(--secondary-bg);
+  min-height: 85vh; /* not height:100% */
   display: flex;
-  height: 100%;
-  justify-content: center;
   align-items: center;
-  padding: var(--space-2xs);
 }
 
-.heroTxt {
-  color: var(--black);
-  text-align: center;
+.heroMain {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  gap: var(--space-2xs);
+  text-align: left;
+  gap: var(--space-exs);
 }
 
-.heroTxt p {
-  text-align: center;
-  margin: 0 auto;
-  width: 85%;
+.heroTitle {
   hyphens: auto;
   overflow-wrap: break-word;
-  line-height: 0.9;
+  text-align: left;
+}
+
+.heroDescription {
+  max-width: 95%;
+  text-align: left;
   font-size: var(--step-1);
+  hyphens: auto;
+  word-break: break-word;
+  font-weight: 800;
 }
 
-.heroMainBtn {
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  padding: var(--space-xs);
+.heroSignature {
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  font-size: var(--step-2);
+  font-weight: 600;
+}
+
+.heroRole {
+  font-size: var(--step--1);
+  font-weight: normal;
+  font-style: italic;
+}
+
+.heroSignature > * + * {
+  position: relative;
+  padding-left: 12px;
+}
+
+.heroSignature > * + *::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 2em;
+  background: currentColor;
+  opacity: 0.4;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xs);
+  justify-content: center;
+}
+
+.heroBtn {
+  min-width: fit-content;
   width: 60%;
-  color: var(--black);
-  min-width: fit-content;
-  text-decoration: none;
-  border: 2px solid var(--btn-secondary-border);
-  line-height: 0.8;
-}
-
-.heroSecondaryBtn {
-  border: none;
+  background-color: var(--header-bg);
+  border: 2px solid var(--btn-primary-border);
+  padding: var(--space-2xs) var(--space-s);
+  text-align: left;
+  display: flex;
+  margin-top: -20px;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 8px;
-  cursor: pointer;
-  border: 2px solid var(--btn-secondary-border);
-  background: transparent;
-  color: var(--black);
-  font-size: var(--step-1);
-  padding: var(--space-xs);
-  width: 60%;
-  min-width: fit-content;
+  font-weight: bolder;
   text-decoration: none;
+  color: var(--white);
+}
+.heroBtnSecondary {
+  min-width: fit-content;
+  width: 60%;
+  border: 2px solid var(--header-bg);
+  padding: var(--space-2xs) var(--space-s);
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: var(--white);
 }
 
-.heroTxt button {
-  display: block;
-  margin: 0 auto;
-  min-width: fit-content;
-  width: 70%;
+.heroBtn:hover {
+  background-color: var(--bg);
 }
 
 .heroContainer img {
@@ -75,7 +122,7 @@
 
 .divider {
   text-align: center;
-  padding: var(--space-2xs) var(--space-xs);
+  padding: var(--space-2xs) var(--space-xs) 0;
   background-color: var(--bg);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -137,8 +184,8 @@
 
 .aboutMeBtn {
   width: 90%;
-
-  border: 2px solid var(--btn-secondary-border);
+  background-color: var(--header-bg);
+  border: 2px solid var(--black);
   padding: var(--space-2xs) var(--space-s);
   text-align: left;
   display: flex;
@@ -147,10 +194,9 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
-  margin-bottom: var(--space-l);
   font-weight: bolder;
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
 }
 .aboutMeBtn:hover {
   background-color: var(--btn-secondary-hover);
@@ -162,6 +208,9 @@
   align-items: center;
   justify-content: center;
   padding: var(--space-m) 0;
+  background-color: var(--secondary-bg);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .iconWrap {
@@ -196,12 +245,15 @@
 }
 
 .testimonialContainer {
+  background-color: var(--secondary-bg);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: repeat(auto-fit, minmax(180px, auto));
   justify-content: center;
   gap: var(--space-3xs);
-  padding: var(--space-2xs) 0;
+  padding: var(--space-2xs);
 }
 
 .form h2 {
@@ -209,11 +261,11 @@
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   text-align: center;
-  padding: var(--space-m);
+  padding: var(--space-l);
   color: var(--white);
 }
 
 .formContainer {
-  padding: var(--space-2xs) var(--space-xs);
+  padding: 0 var(--space-xs);
   min-height: fit-content;
 }

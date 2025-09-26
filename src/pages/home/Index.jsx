@@ -1,7 +1,9 @@
 import styles from "./Index.module.css";
 
 // Components //
-import headShot from "@/assets/img/headShot2x.png";
+import headShot from "@assets/img/headShot2x.png";
+import client1 from "@assets/img/Client1.jpg";
+import client2 from "@assets/img/Client2.jpg";
 import Button from "@components/button/Index.jsx";
 import Expectation from "@components/expectations/Index.jsx";
 import Testimonials from "@components/testimonials/Index.jsx";
@@ -18,27 +20,41 @@ import Calender from "@assets/icons/Calender.jsx";
 import Communication from "@assets/icons/Communication.jsx";
 import Conversation from "@assets/icons/Conversation.jsx";
 import Finance from "@assets/icons/Finance.jsx";
-
+import Signature from "@assets/icons/Signature";
 export default function Home() {
   return (
     <>
       <section className={styles.heroContainer}>
+        <p className={styles.heroSubtitle}>— Title</p>
         <div className={styles.heroContent}>
-          <div className={styles.heroTxt}>
-            <h1>Come As You Are</h1>
-            <p>
-              Schedule a free consultation and start achieving your goals today!
+          <div className={styles.heroMain}>
+            <h1 className={styles.heroTitle}>
+              Clarity & Support to Grow Your Faith
+            </h1>
+            <p className={styles.heroDescription}>
+              Get help from Cedric Vincent. Helping you navigate life's
+              challenges with faith-based guidance and support.
             </p>
-            <a className={styles.heroMainBtn} href="#contactForm">
-              Book A Free <br />
-              Consultation
-            </a>
-            <a className={styles.heroSecondaryBtn} href="#aboutMe">
-              About Me
-            </a>
-          </div>
-          <div className={styles.heroImg}>
-            <img src={headShot} alt="Headshot" />
+            <div className={styles.heroSignature}>
+              <Signature size={140} color="var(--white)" />
+              <div>
+                <p>Cedric Vincent</p>
+                <p className={styles.heroRole}>Faith-Based Consultant</p>
+              </div>
+            </div>
+            <div className={styles.buttonGroup}>
+              <a href="#contactForm" className={styles.heroBtn}>
+                Book A Chat <ForwardArrow color="var(--white)" size={36} />
+              </a>
+              <a href="#aboutMe" className={styles.heroBtnSecondary}>
+                About Me
+                <ForwardArrow color="var(--white)" size={36} />
+              </a>
+            </div>
+
+            <div className={styles.heroImg}>
+              <img src={headShot} alt="Headshot" />
+            </div>
           </div>
         </div>
       </section>
@@ -96,13 +112,13 @@ export default function Home() {
               </p>
             </div>
             <a href="#contactForm" className={styles.aboutMeBtn}>
-              Book A Chat <ForwardArrow color="var(--black)" size={36} />
+              Book A Chat <ForwardArrow color="var(--white)" size={36} />
             </a>
           </div>
         </section>
         <section className={styles.divider}>
-          <h2>The Process</h2>
           <div className={styles.processContainer}>
+            <h2>The Process</h2>
             <div className={styles.iconWrap}>
               <Calender color="var(--black)" size={72} />
               <p className={styles.iconHeader}>Schedule a Meeting</p>
@@ -150,13 +166,13 @@ export default function Home() {
           <h2>What People Are Saying</h2>
           <div className={styles.testimonialContainer}>
             <Testimonials
-              img={headShot}
+              img={client1}
               review="This is a fantastic service!"
               name="John Doe"
               job="Software Engineer"
             />
             <Testimonials
-              img={headShot}
+              img={client2}
               review="I would highly recommend this to anyone!"
               name="Jane Smith"
               job="Product Manager"

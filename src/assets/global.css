@@ -19,8 +19,8 @@
   --black: #333;
   --white: #eaeaee;
 
-  --bg: var(--khaki);
-  --secondary-bg: var(--sage-light);
+  --bg: #f5f5f4;
+  --secondary-bg: #f5f5f4;
   --header-bg: var(--olive-green);
   --header-primary: var(--seal-brown);
   --header-secondary: var(--russet);
@@ -71,11 +71,12 @@ html {
 
 body {
   color: var(--black);
+  font-family: "Inter", sans-serif;
 }
 
 h1 {
   font-size: var(--step-5);
-  color: var(--header-primary);
+  color: var(--white);
   font-weight: bolder;
 }
 

@@ -10,10 +10,17 @@ export default function Testimonials({ img, review, name, job, ...props }) {
             <img src={img} alt={`${name}'s photo`} className={styles.avatar} />
           )}
         </div>
+
         <div className={styles.textWrapper}>
           <p className={styles.name}>{name}</p>
           <p className={styles.job}>{job}</p>
-
+          <div className={styles.rating}>
+            <Star2 color="yellow" size={20} />
+            <Star2 color="yellow" size={20} />
+            <Star2 color="yellow" size={20} />
+            <Star2 color="yellow" size={20} />
+            <Star2 color="yellow" size={20} />
+          </div>
           <p>{review}</p>
         </div>
       </div>
